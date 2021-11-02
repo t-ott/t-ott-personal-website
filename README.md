@@ -1,40 +1,6 @@
-## Phantom for Jekyll
+# t-ott.dev: My Personal Website
 
-A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
-
-![preview](preview.jpg)
-
-[See it in action](http://jamigibbs.github.io/phantom/).
-
-## Fancy using it for your own site?
-
-Here are some steps to get you started:
-
-1. Clone this repo and cd into the directory:
-
-  ```bash
-  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
-  ```
-
-2. Run:
-
-  ```bash
-  gem install bundler
-  bundle install
-  bundle exec jekyll serve
-  ```
-
-  You may need to append your commands with `sudo` if you're getting a permissions error.
-
-  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
-
-3. Visit in your browser at:
-
-  `http://127.0.0.1:4000`
-
-## Launching with Github Pages :rocket:
-
-Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
+Built using the [Phantom](https://https://github.com/jamigibbs/phantom) theme for for [Jekyll](http://jekyllrb.com/).
 
 ## Theme Features
 
@@ -42,17 +8,11 @@ Jekyll + Github pages is a marriage made in heaven. You can [use your own custom
 
 Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
 
-```yaml
-nav_item:
-    - { url: '/', text: 'Home' }
-    - { url: '/about', text: 'About' }
-```
-
 Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
 
 ### Contact Form
 
-You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
+You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system.
 
 Place the modal window template in any place you'd like the user to click for the contact form.
 The template will display a link to click for the contact form modal window:
@@ -88,7 +48,20 @@ By default, pagination on the home page will activate after 10 posts. You can ch
 
 Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
 
+## Updates Made to Original Theme
+- Updated Font Awesome tags throughout ```_includes``` to support newest version
+- Added Kaggle link/logo to home page
+- Implemented a simple archive page layout ```/_layouts/archive.html``` which lists each post by date.
+
+## Updates Wanted?
+- For some reason the white container background on the home page is ever so slightly wider than on the other pages. Fix this in the CSS?
+- Expand the About section, perhaps link to a PDF resume.
+- Once more posts are added, the Archive may be better to organize by month, year, or topic. Or maybe let the user sort by any of those?
+- Instead of manually specifying if a post as ```position: left``` or ```position: right```, it would be easier if it just automatically altered between right and left based on the order of posts.
+
 ## Credit
+
+* Jeykll Phantom Theme, https://https://github.com/jamigibbs/phantom, (C) 2016 Jami Gibbs, [MIT](https://github.com/jamigibbs/phantom/blob/master/LICENSE)
 
 * Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 

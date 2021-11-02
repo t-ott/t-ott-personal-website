@@ -1,0 +1,18 @@
+{% include header.html %}
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          {{ content }}
+
+          {% for post in site.posts %}
+            <p>{{ post.date | slice: 0,10 }} - <a href="{{ post.project_link }}">{{ post.title }}</a></p>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+{% include footer.html %}

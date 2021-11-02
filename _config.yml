@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Hello, world! I'm Tommy Ott."
-email: 'tommy.ott617@gmail.com'
-description: "I'm a GIS nerd and burgeoning developer."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://t-ott.dev" # the base hostname & protocol for your site, e.g. https://example.com
+title: 'Tommy Ott'
+description: 'Interested in data science, Python, geospatial, natural resources, drones, and much more.'
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://t-ott.dev' # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: ''
 github_username: 't-ott'
+kaggle_username: 'tommyott'
 medium_username: ''
 
 # Build settings
@@ -99,3 +99,4 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
+  - { url: '/archive', text: 'Archive'}
