@@ -63,9 +63,9 @@ Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
 
 * Jeykll Phantom Theme, https://https://github.com/jamigibbs/phantom, (C) 2016 Jami Gibbs, [MIT](https://github.com/jamigibbs/phantom/blob/master/LICENSE)
 
-* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2021 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
-* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
+* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2017 Matthieu Aussaguel
 , [GPL](https://github.com/matthieua/WOW#open-source-license)
 
-* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
+* Animate.css, https://github.com/daneden/animate.css, (C) 2021 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
