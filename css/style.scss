@@ -64,6 +64,11 @@ img {
   width: 100%;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 button.btn, input.btn {
   padding: 12px 35px;
   margin: 2em 0.5em;
@@ -275,7 +280,7 @@ button.btn, input.btn {
       &:after {
         content: '';
         position: absolute;
-        top: 1.5em;
+        top: calc(100% + 0.5em);
         left: 0;
         width: 3em;
         height: 3px;
