@@ -261,6 +261,10 @@ button.btn, input.btn {
     margin-bottom: 2em;
   }
   img.img-responsive {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
     @include bp-xsmall {
       display: none;
     }

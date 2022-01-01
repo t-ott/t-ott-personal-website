@@ -8,6 +8,8 @@
           {% for post in site.posts %}
             {% if post.project_link contains "www.kaggle.com" %}
             <p>{{ post.date | slice: 0,10 }} - <a href="{{ post.project_link }}">{{ post.title }} (Kaggle)</a></p>
+            {% elsif post.project_link contains "github.com" %}
+            <p>{{ post.date | slice: 0,10 }} - <a href="{{ post.project_link }}">{{ post.title }} (GitHub)</a></p>
             {% else %}
             <p>{{ post.date | slice: 0,10 }} - <a href="{{ site.baseurl}}/{{ post.project_link }}">{{ post.title }}</a></p>
             {% endif %}
