@@ -1,6 +1,6 @@
 # t-ott.dev: My Personal Website
 
-Built using the [Phantom](https://https://github.com/jamigibbs/phantom) theme for for [Jekyll](http://jekyllrb.com/).
+Built using the [Phantom](https://github.com/jamigibbs/phantom) theme for for [Jekyll](http://jekyllrb.com/).
 
 ## Theme Features
 
