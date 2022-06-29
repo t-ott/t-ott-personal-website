@@ -1,0 +1,109 @@
+{% include header-min.html %}
+
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-xs-6">
+      <div class="dropdown open" style="z-index: 1;">
+
+        <div class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+          Hide/Show Jack Editor
+          <span class="caret"></span>
+        </div>
+      
+        <ul class="dropdown-menu">
+          <li><textarea id="xmlText" style="display: none;"></textarea></li>
+          <li>
+            <div class="btn btn-default" id="parseButton">Generate Parse Tree</div>
+            <div class="btn btn-default" data-toggle="modal" data-target="#help">Help</div>
+          </li>
+          <li>
+            <textarea id="jackTextArea" class="code-area" spellcheck="false">class Main {&#10;  function void main() {&#10;    do Output.printString("Hello, world!");&#10;    do Output.println();&#10;    return;&#10;  }&#10;}</textarea>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    
+    <div class="col-xs-6">
+      <a href="{{ site.url }}/2022/06/29/parse-tree-visualizer" class="btn btn-default pull-right">&larr; Return to Blog Post</a>
+    </div>
+
+  </div>
+  
+
+  <div id="tree-canvas" style="height: 90vh;"><svg></svg></div>
+</div>
+
+<!-- Help modal -->
+<div id="help" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The Jack syntax analyzer used here does not have error
+          handling abilities (yet). Therefore, any Jack code must
+          be written error-free. See
+          <a href="https://www.cs.huji.ac.il/course/2002/nand2tet/docs/ch_9_jack.pdf"
+            target="_blank"
+            style="color: #337ab7;"
+            onmouseover="this.style.color='#FF5B33'"
+            onmouseout="this.style.color='#337ab7'">Chapter 9 of the nand2tetris book</a>
+          for help writing proper Jack code.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Error modal -->
+<div id="error" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #FFCCCC; color: #CC0000;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p><strong>Compilation Error</strong></p>
+      </div>
+      <div class="modal-body">
+        <p>
+          The Jack syntax analyzer raised an exception.
+          There may syntax errors in the Jack code provided.
+          See the browser console for traceback details.
+          <br/><br/>
+          The Jack syntax analyzer used here does not have error
+          handling abilities (yet). Therefore, any Jack code must
+          be written error-free (sorry). See
+          <a href="https://www.cs.huji.ac.il/course/2002/nand2tet/docs/ch_9_jack.pdf"
+            target="_blank"
+            style="color: #337ab7;"
+            onmouseover="this.style.color='#FF5B33'"
+            onmouseout="this.style.color='#337ab7'">Chapter 9 of the nand2tetris book</a>
+          for help writing proper Jack code.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
+
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<py-env>
+  - paths:
+    - ../py/jack-syntax-analyzer/tokenizer.py
+    - ../py/jack-syntax-analyzer/compilation_engine.py
+</py-env>
+<py-script src="/py/jack-syntax-analyzer/analyzer_browser.py"></py-script>
+<script src="/js/tree.js"></script>
+
+

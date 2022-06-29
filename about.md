@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 ## About Me
-I'm currently a GIS Technician in Burlington, Vermont, working in environmental consulting.
+I'm currently working as a GIS Technician in Vermont.
 
 {% if site.enable_contact == true %}
 {% include contact.html %}
