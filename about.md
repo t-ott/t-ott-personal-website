@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 ## About Me
-I'm currently working as a GIS Analyst in Vermont.
+I'm currently working as a Geospatial Developer.
 
 {% if site.enable_contact == true %}
 {% include contact.html %}
