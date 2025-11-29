@@ -1,5 +1,5 @@
 from js import document
-from pyodide import create_proxy
+from pyodide.ffi import create_proxy
 from tokenizer import Tokenizer
 from compilation_engine import CompilationEngine
 

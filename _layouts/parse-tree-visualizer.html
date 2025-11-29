@@ -1,6 +1,6 @@
 {% include header-min.html %}
 
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css" />
 
 <div class="container-fluid">
   <div class="row">
@@ -96,14 +96,7 @@
 
 {% include footer.html %}
 
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<script defer type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<py-env>
-  - paths:
-    - ../py/jack-syntax-analyzer/tokenizer.py
-    - ../py/jack-syntax-analyzer/compilation_engine.py
-</py-env>
-<py-script src="/py/jack-syntax-analyzer/analyzer_browser.py"></py-script>
+<script type="py" src="/py/jack-syntax-analyzer/analyzer_browser.py" config="../pyscript.json"></script>
 <script src="/js/tree.js"></script>
-
-
